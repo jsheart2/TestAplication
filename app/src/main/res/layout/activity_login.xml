@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Data"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/etfullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="25dp"
+        android:hint="Full Name" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etfullname"
+        android:layout_marginTop="15dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/etcompassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpassword"
+        android:layout_marginTop="15dp"
+        android:hint="Comfirm Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/etGender"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/etcompassword"
+        android:layout_marginTop="15dp"
+        android:text="Gender"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/etdate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etGender"
+        android:layout_marginTop="34dp"
+        android:text="Date of Birthday"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ettanggal"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etcompassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="77dp" />
+
+    <CheckBox
+        android:id="@+id/caggre"
+        android:layout_width="140dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/etdate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="125dp"
+        android:text="Agree"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caggre"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="96dp"
+        android:text="Submit" />
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etcompassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:text="1" />
+
+    <RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etcompassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="84dp"
+        android:text="2" />
+
+</RelativeLayout>
